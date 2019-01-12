@@ -161,7 +161,7 @@ public class Utils {
         }
 
         return serverUrl.replace("{device}", device)
-                .replace("{type}", type)
+        .replace("{type}", type);
     }
 
     public static String getUpgradeBlockedURL(Context context) {
