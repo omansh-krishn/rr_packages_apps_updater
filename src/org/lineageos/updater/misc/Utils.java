@@ -151,7 +151,7 @@ public class Utils {
 
         String serverUrl = SystemProperties.get(Constants.PROP_UPDATER_URI);
         if (serverUrl.trim().isEmpty()) {
-            serverUrl = context.getString(R.string.updater_server_url);
+            serverUrl = "https://raw.githubusercontent.com/ResurrectionRemix-Devices/api/master/{device}.json";
         }
 
         return serverUrl.replace("{device}", device)
